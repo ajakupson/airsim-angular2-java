@@ -1,0 +1,19 @@
+<div class="router-outlet-content">
+  <h1>Options</h1>
+  <section class="section">
+    <div class="section-content">
+      <div class="tabs">
+        <ul>
+          <li><a [routerLink]="['./private']"><i class="fa fa-eye-slash"></i><span class="hide-for-w533">Private</span></a></li>
+          <li><a [routerLink]="['./synchronization']"><i class="fa fa-arrows-h"></i><span class="hide-for-w533">Synchronization</span></a></li>
+          <li><a [routerLink]="['./safety']"><i class="fa fa-certificate"></i><span class="hide-for-w533">Safety</span></a></li>
+          <li><a [routerLink]="['./personal-data']"><i class="fa fa-user"></i><span class="hide-for-w533">Personal Data</span></a></li>
+        </ul>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="clear"></div>
+</div>

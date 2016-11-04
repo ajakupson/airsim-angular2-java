@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AirSim Social Network</title>
+    <!-- START: styles -->
+    <link rel="stylesheet" type="text/css" href="./app/assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="./app/assets/css/font-awesome.css"/>
+    <link rel="stylesheet" type="text/css" href="./app/assets/css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="./app/assets/css/selectric_plus.css"/>
+    <!-- END: styles -->
+
+    <!-- BEGIN Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./app/assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./app/assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./app/assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./app/assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./app/assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./app/assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./app/assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./app/assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./app/assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./app/assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./app/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./app/assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./app/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- END Favicon -->
+    <base href="/">
+  </head>
+  <body>
+    <div class="container">
+      <airsim-app><div class="app-loading">Loading...</div></airsim-app>
+    </div>
+
+    <!-- START: scripts -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="app/assets/libs/jquery.selectric.js"></script>
+    <script src="app/assets/libs/jHERE/jhere.js"></script>
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+    <!-- END: scripts -->
+
+  </body>
+</html>

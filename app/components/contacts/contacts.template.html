@@ -1,0 +1,18 @@
+<div class="router-outlet-content">
+  <h1>Contacts</h1>
+  <section class="section">
+    <div class="section-content">
+      <div class="tabs">
+        <ul>
+          <li><a [routerLink]="['./friends']"><i class="fa fa-users"></i><span class="hide-for-w533">Friends</span></a></li>
+          <li><a [routerLink]="['./add-contact']"><i class="fa fa-search"></i><span class="hide-for-w533">Add Contact</span></a></li>
+          <li><a [routerLink]="['./updates']"><i class="fa fa-bell"></i><span class="hide-for-w533">Updates</span></a></li>
+        </ul>
+        <div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="clear"></div>
+</div>
